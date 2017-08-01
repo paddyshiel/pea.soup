@@ -1,16 +1,14 @@
 plugins {
+    id 'nebula.project' version '3.4.0'
     id 'nebula.release' version '6.0.0'
+    id 'nebula.maven-publish' version '5.1.0'
 }
 
 apply plugin: 'java'
 apply plugin: 'application'
-//apply plugin: 'nebula.project-plugin'
-//apply plugin: 'nebula.dependency-lock'
-//apply plugin: 'nebula.ospackage-application-daemon'
-//apply plugin: 'nebula.maven-publish'
-//apply plugin: 'nebula.sources-jar'
+apply plugin: 'nebula.project'
 apply plugin: 'nebula.release'
-//apply plugin: 'nebula.bintray'
+apply plugin: 'nebula.maven-publish'
 
 repositories {
     jcenter()
