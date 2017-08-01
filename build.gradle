@@ -1,0 +1,27 @@
+plugins {
+    id 'nebula.release' version '6.0.0'
+}
+
+apply plugin: 'java'
+apply plugin: 'application'
+//apply plugin: 'nebula.project-plugin'
+//apply plugin: 'nebula.dependency-lock'
+//apply plugin: 'nebula.ospackage-application-daemon'
+//apply plugin: 'nebula.maven-publish'
+//apply plugin: 'nebula.sources-jar'
+apply plugin: 'nebula.release'
+//apply plugin: 'nebula.bintray'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compile 'com.google.guava:guava:20.0'
+    testCompile 'org.codehaus.groovy:groovy-all:2.4.7'
+    testCompile 'org.spockframework:spock-core:1.0-groovy-2.4'
+    testCompile 'junit:junit:4.12'
+}
+
+mainClassName = 'com.patrickshiel.pea.soup.App'
+
