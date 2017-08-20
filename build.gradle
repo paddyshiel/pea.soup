@@ -20,6 +20,14 @@ dependencies {
     testCompile 'org.spockframework:spock-core:1.0-groovy-2.4'
     testCompile 'junit:junit:4.12'
 }
+
+publishing {
+    repositories {
+        maven {
+            url "http://com.patrickshiel/repo"
+        }
+    }
+}
 group = 'com.patrickshiel.peasoup'
 mainClassName = 'com.patrickshiel.pea.soup.App'
 
